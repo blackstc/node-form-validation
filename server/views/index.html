@@ -5,11 +5,14 @@
 
 {% block content %}
 
-  <div class="container">
+<form action="/puppies/new" method="post">
+  <input type="submit" name="puppies" value="Add a Puppy">
+  <!-- <button type="button" name="puppy">Add Puppy</button><br> -->
+</form>
 
-    <h1>{{ title }}</h1>
-    <p>Welcome to {{ title }}</p>
-
-  </div>
+<form action="/people/new" method="post">
+  <input type="submit" name="people" value="Add People">
+  <!-- <button type="button" name="people">Add People</button><br> -->
+</form>
 
 {% endblock %}

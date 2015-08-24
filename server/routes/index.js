@@ -5,4 +5,8 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
+router.post("/puppies/new", function(req, res, next) {
+  res.render("newPuppy");
+});
+
 module.exports = router;
