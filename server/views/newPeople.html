@@ -4,20 +4,20 @@
 
 
 {% block content %}
-<h1 class="text-center"> Add a Puppy</h1>
+<h1 class="text-center"> Add a Person</h1>
 {% for error in errors %}
   <p class="alert alert-danger">{{ error }}</p>
 {% endfor %}
 <h3>
   <div class="container">
-    <form action="/puppies" method="POST">
+    <form action="/people" method="POST">
       <div class="form-group">
-        <label for="puppy-name">Puppy Name</label>
-        <input type="text" class="form-control" id="puppy-name" name="name"placeholder="Puppy Name">
+        <label for="people-name">Person Name</label>
+        <input type="text" class="form-control" id="people-name" name="name" placeholder="Person Name">
       </div>
       <div class="form-group">
-        <label for="puppy-id">Puppy ID</label>
-        <input type="text" class="form-control" id="puppy-id" name="id" placeholder="Puppy ID">
+        <label for="people-id">Person ID</label>
+        <input type="text" class="form-control" id="people-id" name="id" placeholder="Person ID">
       </div>
       <button type="submit" class="btn btn-default">Submit</button>
     </form>

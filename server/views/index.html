@@ -4,15 +4,11 @@
 
 
 {% block content %}
-
-<form action="/puppies/new" method="post">
-  <input type="submit" name="puppies" value="Add a Puppy">
-  <!-- <button type="button" name="puppy">Add Puppy</button><br> -->
+<form action="/puppies/new">
+  <button type="submit" class="btn btn-default">Add A Puppy</button>
 </form>
-
-<form action="/people/new" method="post">
-  <input type="submit" name="people" value="Add People">
-  <!-- <button type="button" name="people">Add People</button><br> -->
+<form action="/people/new">
+  <button type="submit" class="btn btn-default">Add A Person</button>
 </form>
 
 {% endblock %}
